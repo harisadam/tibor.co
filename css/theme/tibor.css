@@ -230,8 +230,8 @@ body {
    width: 170px;
    height: 58px;
    z-index: 30;
-   right: 10px;
-   bottom: 10px;
+   right: 20px;
+   bottom: 20px;
    -webkit-user-select: none; }
 
  .reveal .controls div {
