@@ -346,7 +346,14 @@ body {
 /* mobile */
 @media (max-width: 768px) {
   .logo{
-    display:none;
+    width:81px;
+    height:35px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .logo img{
+
   }
 
   .controls{
