@@ -342,3 +342,14 @@ body {
 .logo img{
   width:100%;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+  .logo{
+    display:none;
+  }
+
+  .controls{
+    display:none!important;
+  }
+}
