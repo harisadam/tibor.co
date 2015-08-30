@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>reveal.js - The HTML Presentation Framework</title>
+    <title>Tibor Z. Petenyi</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -38,27 +38,27 @@
 
     <div class="reveal">
       <div class="logo">
-        <a href="http://tibor.co"><img src="images/tibor-co.png"/></a>
+        <a href="mailto:hello@tibor.co"><img src="images/tibor-co.png"/></a>
       </div>
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
 
         <!-- Animal cubs -->
         <section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/1-animal-cubs-1.png" alt=""/>
           </section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/1-animal-cubs-2.png" alt=""/>
           </section>
         </section>
 
         <!-- Tibi -->
         <section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/2-tibi-1.png" alt=""/>
           </section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/2-tibi-2.png" alt=""/>
           </section>
         </section>
@@ -70,16 +70,16 @@
 
         <!-- Cat2 -->
         <section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/4-cat-1.png" alt=""/>
           </section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/4-cat-2.png" alt=""/>
           </section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/4-cat-3.png" alt=""/>
           </section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/4-cat-4.png" alt=""/>
           </section>
         </section>
@@ -106,10 +106,10 @@
 
         <!-- Space -->
         <section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/9-space-1.png" alt=""/>
           </section>
-          <section>
+          <section data-transition="convex">
             <img src="images/slides/9-space-2.png" alt=""/>
           </section>
         </section>
@@ -121,12 +121,12 @@
 
         <!-- Danone -->
         <section>
-          <img src="images/slides/11-danone.png" alt=""/>
-        </section>
-
-        <!-- Danone2 -->
-        <section>
-          <img src="images/slides/12-danone.png" alt=""/>
+          <section data-transition="convex">
+            <img src="images/slides/11-danone.png" alt=""/>
+          </section>
+          <section data-transition="convex">
+            <img src="images/slides/12-danone.png" alt=""/>
+          </section>
         </section>
       </div>
 
@@ -154,7 +154,7 @@
         //parallaxBackgroundSize: '2100px 900px',
         transitionSpeed: 'slow',
 
-        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
         // Optional reveal.js plugins
         dependencies: [
