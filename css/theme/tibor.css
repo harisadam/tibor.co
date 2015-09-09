@@ -360,3 +360,62 @@ body {
     display:none!important;
   }
 }
+
+/* About slide */
+.profile-pic{
+  float:left;
+  width:120px;
+  margin-right: 20px!important;
+}
+
+.profile-pic img{
+  width:100%;
+}
+
+.about{
+  text-align:left;
+  float:left;
+  width:820px;
+}
+
+.about p.hello{
+  font-family:Helverica, arial;
+  font-weight:bold;
+  font-size:30px;
+  margin-right: 15px;
+}
+
+.about p{
+  font-family:Helverica, arial;
+  font-size:30px;
+  float:left;
+}
+
+.about .social{
+  width:54px;
+  height:54px;
+  float:left;
+  display:block;
+  background:url(../../images/logos.jpg) no-repeat;
+  margin: 14px 0 0 9px;
+}
+
+.about .social.facebook{
+  background-position:-188px 0;
+}
+
+.about .social.behance{
+  background-position:0 0;
+}
+
+.about .social.dribbble{
+  background-position:-63px 0;
+}
+
+.about .social.instagram{
+  background-position:-251px 0;
+}
+
+.about .social.linkedin{
+  background-position:-126px 0;
+}
