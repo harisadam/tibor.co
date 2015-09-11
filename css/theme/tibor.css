@@ -62,7 +62,7 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 20px 0;
+  margin: 18px 0;
   line-height: 1.3; }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -381,8 +381,9 @@ body {
 .about p.hello{
   font-family:Helverica, arial;
   font-weight:bold;
-  font-size:23px;
-  margin-right: 15px;
+  font-size:18px;
+  margin-right: 7px;
+  margin-top: 0;
 }
 
 .left{
@@ -391,20 +392,20 @@ body {
 
 .about p{
   font-family:Helverica, arial;
-  font-size:23px;
+  font-size:18px;
 }
 
 .about .social{
-  width:54px;
-  height:54px;
+  width:30px;
+  height:30px;
   float:left;
   display:block;
   background:url(../../images/logos.jpg) no-repeat;
-  margin: 9px 0 0 9px;
+  margin: -4px 0 0 7px;
 }
 
 .about .social.facebook{
-  background-position:-188px 0;
+  background-position:-106px 0;
 }
 
 .about .social.behance{
@@ -412,13 +413,13 @@ body {
 }
 
 .about .social.dribbble{
-  background-position:-63px 0;
+  background-position:-35px 0;
 }
 
 .about .social.instagram{
-  background-position:-251px 0;
+  background-position:-141px 0;
 }
 
 .about .social.linkedin{
-  background-position:-126px 0;
+  background-position:-71px 0;
 }
