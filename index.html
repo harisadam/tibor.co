@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/tibor.css" id="theme">
 
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 
     <!-- Printing and PDF exports -->
     <script>
@@ -43,8 +42,7 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
 
-        <!-- Animal cubs -->
-        <section>
+        <section data-state="horizontal">
           <div class="profile-pic">
             <img src="images/tiborco.jpg" alt=""/>
           </div>
@@ -67,71 +65,71 @@
 
         <!-- Animal cubs -->
         <section data-background="#e8e7e8">
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="vertical">
             <img src="images/slides/1-animal-cubs-1.png" alt=""/>
           </section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="horizontal">
             <img src="images/slides/1-animal-cubs-2.png" alt=""/>
           </section>
         </section>
 
         <!-- Tibi -->
         <section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="vertical">
             <img src="images/slides/2-tibi-1.png" alt=""/>
           </section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="horizontal">
             <img src="images/slides/2-tibi-2.png" alt=""/>
           </section>
         </section>
 
         <!-- Cat -->
-        <section>
+        <section data-state="horizontal">
           <img src="images/slides/3-cat.png" alt=""/>
         </section>
 
         <!-- Cat2 -->
         <section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="vertical">
             <img src="images/slides/4-cat-1.png" alt=""/>
           </section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="vertical">
             <img src="images/slides/4-cat-2.png" alt=""/>
           </section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="vertical">
             <img src="images/slides/4-cat-3.png" alt=""/>
           </section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="horizontal">
             <img src="images/slides/4-cat-4.png" alt=""/>
           </section>
         </section>
 
         <!-- Opel -->
-        <section>
+        <section data-state="horizontal">
           <img src="images/slides/5-opel.png" alt=""/>
         </section>
 
         <!-- Ludas -->
-        <section data-background="#e8e7e8">
+        <section data-background="#e8e7e8" data-state="horizontal">
           <img src="images/slides/6-ludas.png" alt=""/>
         </section>
 
         <!-- Relativity -->
-        <section data-background="#e8e7e8">
+        <section data-background="#e8e7e8" data-state="horizontal">
           <img src="images/slides/7-relativity.png" alt=""/>
         </section>
 
         <!-- Opel Rezsi -->
-        <section>
+        <section data-state="horizontal">
           <img src="images/slides/8-opel-rezsi.png" alt=""/>
         </section>
 
         <!-- Space -->
         <section data-background="#e8e7e8">
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="vertical">
             <img src="images/slides/9-space-1.png" alt=""/>
           </section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="horizontal">
             <img src="images/slides/9-space-2.png" alt=""/>
           </section>
         </section>
@@ -143,10 +141,10 @@
 
         <!-- Danone -->
         <section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="vertical">
             <img src="images/slides/12-danone.png" alt=""/>
           </section>
-          <section data-transition="convex">
+          <section data-transition="convex" data-state="horizontal">
             <img src="images/slides/11-danone.png" alt=""/>
           </section>
         </section>
@@ -167,7 +165,6 @@
     <script src="js/reveal.js"></script>
 
     <script>
-
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
@@ -198,6 +195,26 @@
         ]
       });
 
+      // add black arrow on init
+      Reveal.addEventListener( 'ready', function( event ) {
+        if ($('.navigate-down').hasClass('enabled')){
+          $('.navigate-down').addClass('black');
+        }else{
+          $('.navigate-right').addClass('black');
+        }
+      } );
+
+      Reveal.addEventListener( 'vertical', function( event ) {
+        $('.navigate-down').removeClass('black');
+        $('.navigate-right').removeClass('black');
+        $('.navigate-down').addClass('black');
+      });
+
+      Reveal.addEventListener( 'horizontal', function( event ) {
+        $('.navigate-down').removeClass('black');
+        $('.navigate-right').removeClass('black');
+        $('.navigate-right').addClass('black');
+      });
     </script>
 
   </body>
