@@ -423,3 +423,37 @@ body {
 .about .social.linkedin{
   background-position:-71px 0;
 }
+
+.closing{
+  width: 250px;
+  margin: 0 auto;
+}
+
+.closing .social{
+  width:30px;
+  height:30px;
+  float:left;
+  display:block;
+  background:url(../../images/logos.jpg) no-repeat;
+  margin: -4px 0 0 7px;
+}
+
+.closing .social.facebook{
+  background-position:-106px 0;
+}
+
+.closing .social.behance{
+  background-position:0 0;
+}
+
+.closing .social.dribbble{
+  background-position:-35px 0;
+}
+
+.closing .social.instagram{
+  background-position:-141px 0;
+}
+
+.closing .social.linkedin{
+  background-position:-71px 0;
+}
