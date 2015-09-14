@@ -56,7 +56,7 @@
               Tibor Z. Petényi
             </p>
             <a target="blank" href="https://www.behance.net/TiborZPetenyi" class="social behance"></a>
-            <a target="blank" href="https://dribbble.com/search?q=tibor+z+petényi" class="social dribbble"></a>
+            <a target="blank" href="https://dribbble.com/tibor_co" class="social dribbble"></a>
             <a target="blank" href="https://hu.linkedin.com/pub/tibor-z-petényi/a6/293/701" class="social linkedin"></a>
             <a target="blank" href="https://www.facebook.com/tibor.z.petenyi" class="social facebook"></a>
             <a target="blank" href="https://instagram.com/tibor_z_petenyi/" class="social instagram"></a>
@@ -149,10 +149,10 @@
           </section>
         </section>
 
-        <section>
+        <section data-state="final">
           <div class="closing">
             <a target="blank" href="https://www.behance.net/TiborZPetenyi" class="social behance"></a>
-            <a target="blank" href="https://dribbble.com/search?q=tibor+z+petényi" class="social dribbble"></a>
+            <a target="blank" href="https://dribbble.com/tibor_co" class="social dribbble"></a>
             <a target="blank" href="https://hu.linkedin.com/pub/tibor-z-petényi/a6/293/701" class="social linkedin"></a>
             <a target="blank" href="https://www.facebook.com/tibor.z.petenyi" class="social facebook"></a>
             <a target="blank" href="https://instagram.com/tibor_z_petenyi/" class="social instagram"></a>
@@ -205,15 +205,21 @@
       } );
 
       Reveal.addEventListener( 'vertical', function( event ) {
+        Reveal.configure({ controls: true });
         $('.navigate-down').removeClass('black');
         $('.navigate-right').removeClass('black');
         $('.navigate-down').addClass('black');
       });
 
       Reveal.addEventListener( 'horizontal', function( event ) {
+        Reveal.configure({ controls: true });
         $('.navigate-down').removeClass('black');
         $('.navigate-right').removeClass('black');
         $('.navigate-right').addClass('black');
+      });
+
+      Reveal.addEventListener( 'final', function( event ) {
+        Reveal.configure({ controls: false });
       });
     </script>
 
