@@ -37,75 +37,75 @@
 
     <div class="reveal">
       <div class="logo">
-        <a href="mailto:hello@tibor.co"><img src="images/tibor-co.png"/></a>
+        <a href="mailto:hello@tibor.co"><img src=""/></a>
       </div>
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
-        <section data-state="vertical" data-background="#63338f">
+        <section data-state="vertical" data-background="#63338f" data-slide="animal">
           <img src="images/slides_mobile/01.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#63338f">
+        <section data-state="vertical" data-background="#63338f" data-slide="animal">
           <img src="images/slides_mobile/02.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#25177a">
+        <section data-state="vertical" data-background="#25177a" data-slide="tibi">
           <img src="images/slides_mobile/03.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#25177a">
+        <section data-state="vertical" data-background="#25177a" data-slide="tibi">
           <img src="images/slides_mobile/04.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#ffcb05">
+        <section data-state="vertical" data-background="#ffcb05" data-slide="cat">
           <img src="images/slides_mobile/05.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#ffcb05">
+        <section data-state="vertical" data-background="#ffcb05" data-slide="cat">
           <img src="images/slides_mobile/06.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#a8a8b0">
+        <section data-state="vertical" data-background="#a8a8b0" data-slide="opel">
           <img src="images/slides_mobile/07.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#4dde8c">
+        <section data-state="vertical" data-background="#4dde8c" data-slide="ludas">
           <img src="images/slides_mobile/08.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#4dde8c">
+        <section data-state="vertical" data-background="#4dde8c" data-slide="ludas">
           <img src="images/slides_mobile/09.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#ff8921">
+        <section data-state="vertical" data-background="#ff8921" data-slide="einstein">
           <img src="images/slides_mobile/10.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#ff8921">
+        <section data-state="vertical" data-background="#ff8921" data-slide="einstein">
           <img src="images/slides_mobile/11.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#9fb0be">
+        <section data-state="vertical" data-background="#9fb0be" data-slide="opel2">
           <img src="images/slides_mobile/12.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#291e6d">
+        <section data-state="vertical" data-background="#291e6d" data-slide="space">
           <img src="images/slides_mobile/13.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#291e6d">
+        <section data-state="vertical" data-background="#291e6d" data-slide="space">
           <img src="images/slides_mobile/14.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#f7859f">
+        <section data-state="vertical" data-background="#f7859f" data-slide="ciroka">
           <img src="images/slides_mobile/15.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#fff">
+        <section data-state="vertical" data-background="#fff" data-slide="danone">
           <img src="images/slides_mobile/16.png" alt=""/>
         </section>
 
-        <section data-state="vertical" data-background="#0183a2">
+        <section data-state="vertical" data-background="#0183a2" data-slide="stamp">
           <img src="images/slides_mobile/17.png" alt=""/>
         </section>
       </div>
@@ -142,6 +142,20 @@
           { src: 'plugin/zoom-js/zoom.js', async: true },
           { src: 'plugin/notes/notes.js', async: true }
         ]
+      });
+
+      Reveal.addEventListener( 'ready', function( event ) {
+        var title = $(event.currentSlide).attr('data-slide');
+        $('.logo a img').fadeOut('fast', function(){
+          $('.logo a img').attr('src', "images/titles/" + title + ".png").fadeIn('fast');
+        });
+      });
+
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+        var title = $(event.currentSlide).attr('data-slide');
+        $('.logo a img').fadeOut('fast', function(){
+          $('.logo a img').attr('src', "images/titles/" + title + ".png").fadeIn('fast');
+        });
       });
     </script>
     <script>
