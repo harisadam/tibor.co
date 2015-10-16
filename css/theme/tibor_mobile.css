@@ -521,10 +521,15 @@ body {
 
 .slides p{
   font-family:hvoguenormal;
-  font-size:25px;
+  font-size:21px;
   text-align:left;
 }
 
 .slides .image img{
   width:100%;
+  height:auto;
+}
+
+section{
+  height:1000px;
 }
