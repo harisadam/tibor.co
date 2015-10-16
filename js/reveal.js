@@ -1538,11 +1538,7 @@
         // Apply scale transform as a fallback
         else {
           dom.slides.style.left = '50%';
-          if (document.body.clientWidth < 600){
-            dom.slides.style.top = '52%';
-          } else{
-            dom.slides.style.top = '50%';
-          }
+          dom.slides.style.top = '50%';
           dom.slides.style.bottom = 'auto';
           dom.slides.style.right = 'auto';
           transformSlides( { layout: 'translate(-50%, -50%) scale('+ scale +')' } );
