@@ -381,35 +381,6 @@ body {
   font-size:18px;
 }
 
-.about .social{
-  width:30px;
-  height:30px;
-  float:left;
-  display:block;
-  background:url(../../images/logos.jpg) no-repeat;
-  margin: -4px 0 0 7px;
-}
-
-.about .social.facebook{
-  background-position:-106px 0;
-}
-
-.about .social.behance{
-  background-position:0 0;
-}
-
-.about .social.dribbble{
-  background-position:-35px 0;
-}
-
-.about .social.instagram{
-  background-position:-141px 0;
-}
-
-.about .social.linkedin{
-  background-position:-71px 0;
-}
-
 .closing{
   width: 250px;
   margin: 0 auto!important;
@@ -548,5 +519,49 @@ section{
   .about p.hello{
     margin:30px 0;
     font-size:30px;
+  }
+
+  .about .social{
+    float:left;
+    display:block;
+    margin: -4px 0 0 0;
+    background-size:cover!important;
+  }
+
+  .about .social.facebook{
+    width:79px;
+    height:79px;
+    background:url(../../images/social_04.jpg) no-repeat;
+  }
+
+  .about .social.behance{
+    width:125px;
+    height:79px;
+    background:url(../../images/social_01.jpg) no-repeat;
+  }
+
+  .about .social.dribbble{
+    width:96px;
+    height:79px;
+    background:url(../../images/social_02.jpg) no-repeat;
+  }
+
+  .about .social.linkedin{
+    width:94px;
+    height:79px;
+    background:url(../../images/social_03.jpg) no-repeat;
+  }
+
+  .about .social.instagram{
+    width:121px;
+    height:79px;
+    background:url(../../images/social_05.jpg) no-repeat;
+  }
+
+  .mobile-help{
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
   }
 }
