@@ -347,20 +347,6 @@ body {
   width:100%;
 }
 
-/* mobile */
-@media (max-width: 768px) {
-  .logo{
-    width:121px;
-    height:75px;
-    right: 10px;
-    top: 10px;
-  }
-
-  .reveal .controls{
-    display:none!important;
-  }
-}
-
 /* About slide */
 .profile-pic{
   float:left;
@@ -532,4 +518,35 @@ body {
 
 section{
   height:1000px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .logo{
+    width:121px;
+    height:75px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .reveal .controls{
+    display:none!important;
+  }
+
+  .profile-pic{
+    width:13%;
+  }
+
+  .about{
+    width:83%;
+  }
+
+  .about p{
+    font-size:30px;
+  }
+
+  .about p.hello{
+    margin:30px 0;
+    font-size:30px;
+  }
 }
