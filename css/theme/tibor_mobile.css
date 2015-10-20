@@ -464,7 +464,7 @@ body {
   font-size:25px;
   text-align:left;
   text-transform:uppercase;
-  margin-bottom:20px;
+  margin-bottom:10px;
 }
 
 .slides h3{
@@ -473,7 +473,7 @@ body {
   font-size:31px;
   text-align:left;
   text-transform:uppercase;
-  margin-bottom:33px;
+  margin-bottom:18px;
 }
 
 .slides p{
@@ -531,7 +531,7 @@ section{
 
   .about .social.facebook{
     width:71px;
-    height:71px;
+    height:70px;
     background:url(../../images/social_04.jpg) no-repeat;
   }
 
@@ -560,10 +560,12 @@ section{
   }
 
   .mobile-help{
-    width: 100%;
-    position: absolute;
-    bottom: 20%;
-    left: 0;
+    width: 460px;
+    display:block;
+  }
+
+  .mobile-help img{
+    margin-top: 120px!important;
   }
 
   .slides p{
@@ -576,7 +578,7 @@ section{
   }
 
   .slides img{
-    margin-bottom:25px;
+    margin-bottom:10px;
   }
 
   .more{
