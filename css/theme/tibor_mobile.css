@@ -53,8 +53,8 @@ body {
  *********************************************/
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img, .reveal video, .reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
+  max-width: 100%;
+  max-height: 100%; }
 
 .reveal strong, .reveal b {
   font-weight: bold; }
@@ -519,6 +519,7 @@ section{
   .about p.hello{
     margin:30px 0;
     font-size:30px;
+    font-family:'hvoguebold';
   }
 
   .about .social{
@@ -529,32 +530,32 @@ section{
   }
 
   .about .social.facebook{
-    width:79px;
-    height:79px;
+    width:71px;
+    height:71px;
     background:url(../../images/social_04.jpg) no-repeat;
   }
 
   .about .social.behance{
-    width:125px;
-    height:79px;
+    width:112px;
+    height:71px;
     background:url(../../images/social_01.jpg) no-repeat;
   }
 
   .about .social.dribbble{
-    width:96px;
-    height:79px;
+    width:86px;
+    height:71px;
     background:url(../../images/social_02.jpg) no-repeat;
   }
 
   .about .social.linkedin{
-    width:94px;
-    height:79px;
+    width:86px;
+    height:71px;
     background:url(../../images/social_03.jpg) no-repeat;
   }
 
   .about .social.instagram{
-    width:121px;
-    height:79px;
+    width:109px;
+    height:71px;
     background:url(../../images/social_05.jpg) no-repeat;
   }
 
@@ -563,5 +564,14 @@ section{
     position: absolute;
     bottom: 20%;
     left: 0;
+  }
+
+  .slides p{
+    line-height: 36px;
+  }
+
+  .mobile-help img{
+    max-width: 95%;
+    max-height: 95%;
   }
 }
