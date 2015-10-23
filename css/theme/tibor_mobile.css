@@ -445,6 +445,8 @@ body {
 
 .slides .space{
   color:#8b7ed7;
+  line-height: 22px;
+  font-size: 18px;
 }
 
 .slides .ciroka{
@@ -474,6 +476,7 @@ body {
   text-align:left;
   text-transform:uppercase;
   margin-bottom:18px;
+  line-height: 29px;
 }
 
 .slides h3 span{
@@ -502,6 +505,11 @@ section{
 
 /* mobile */
 @media (max-width: 768px) {
+  .clearfix{
+    overflow: auto;
+    zoom: 1;
+  }
+
   .logo{
     width:121px;
     height:75px;
@@ -599,7 +607,9 @@ section{
   .slides p.note{
     font-size:20px;
     font-family:'normal';
-    margin-top: 160px;
+    margin-top: 200px;
+    font-family:'hvoguenormal';
+    font-style:italic;
   }
 
   .slides .description{
@@ -609,6 +619,11 @@ section{
 
   .slides img{
     margin-bottom:10px;
+  }
+
+  .slides img.single{
+    width:85%;
+    float: left;
   }
 
   .more{
