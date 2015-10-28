@@ -607,9 +607,10 @@ section{
   .slides p.note{
     font-size:20px;
     font-family:'normal';
-    margin-top: 200px;
     font-family:'hvoguenormal';
     font-style:italic;
+    position:absolute;
+    bottom:20%;
   }
 
   .slides .description{
@@ -637,10 +638,5 @@ section{
 
   .more.animal{
     background:url(../../images/buttons/more_animal.jpg) no-repeat;
-  }
-
-  .slides p.note.without-desc,
-  .slides p.note.without-desc{
-    margin-top:120px;
   }
 }
