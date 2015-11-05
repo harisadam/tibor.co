@@ -348,11 +348,11 @@ body {
 
 
 .logo{
-  width: 177px;
-  height: 81px;
+  width: 196px;;
+  height: auto;
   position:absolute;
   display:block;
-  right: 40px;
+  right: 4px;
   top: 20px;
   z-index:999;
 }
